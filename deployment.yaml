@@ -4,8 +4,9 @@ metadata:
   name: project-app
   labels:
     app: project
+
 spec:
-  replicas: 3
+  replicas: 3          
   selector:
     matchLabels:
       app: project
@@ -13,11 +14,7 @@ spec:
     metadata:
       labels:
         app: project
-    spec:
-      tolerations:
-      - key: "node-role.kubernetes.io/control-plane"
-        operator: "Exists"
-        effect: "NoSchedule"
+    spec:               
       containers:
       - name: project
         image: chandana1213/webapp
