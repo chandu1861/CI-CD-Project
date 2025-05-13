@@ -37,7 +37,6 @@ pipeline {
                 sh 'docker push chandana1213/webapp:1'
             }
         }
-    }
         stage('Deploy to kubernetes') {
             steps {
                 script {
@@ -48,4 +47,6 @@ pipeline {
             }
         }
     }
+
+}
 }
