@@ -17,6 +17,6 @@ spec:
     spec:               
       containers:
       - name: project
-        image: chandana1213/webapp
+        image: chandana1213/webapp:v1
         ports:
         - containerPort: 8000
