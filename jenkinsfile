@@ -34,7 +34,7 @@ pipeline {
 
         stage('Pushing image to repository') {
             steps {
-                sh 'docker push chandana1213/img:v1'
+                sh "docker push chandana1213/img:v1"
             }
         }
         stage('Deploy to kubernetes') {
